@@ -1,0 +1,52 @@
+<VRTDataset rasterXSize="500" rasterYSize="417">
+  <SRS>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433],AUTHORITY["EPSG","4326"]]</SRS>
+  <GeoTransform>-1.2235030752886196e+002, 9.0352568817593238e-006, 0.0000000000000000e+000, 3.8361467117828532e+001, 0.0000000000000000e+000,-9.0352568817593238e-006</GeoTransform>
+  <VRTRasterBand dataType="Byte" band="1">
+    <NoDataValue>0.00000000000000E+000</NoDataValue>
+    <ColorInterp>Red</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">sample.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="500" RasterYSize="417" DataType="Byte" BlockXSize="500" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <DstRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="2">
+    <NoDataValue>0.00000000000000E+000</NoDataValue>
+    <ColorInterp>Green</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">sample.tif</SourceFilename>
+      <SourceBand>2</SourceBand>
+      <SourceProperties RasterXSize="500" RasterYSize="417" DataType="Byte" BlockXSize="500" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <DstRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="3">
+    <NoDataValue>0.00000000000000E+000</NoDataValue>
+    <ColorInterp>Blue</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">sample.tif</SourceFilename>
+      <SourceBand>3</SourceBand>
+      <SourceProperties RasterXSize="500" RasterYSize="417" DataType="Byte" BlockXSize="500" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <DstRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+  <VRTRasterBand dataType="Byte" band="4">
+    <NoDataValue>0.00000000000000E+000</NoDataValue>
+    <ColorInterp>Alpha</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">sample.tif</SourceFilename>
+      <SourceBand>4</SourceBand>
+      <SourceProperties RasterXSize="500" RasterYSize="417" DataType="Byte" BlockXSize="500" BlockYSize="4" />
+      <SrcRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <DstRect xOff="0" yOff="0" xSize="500" ySize="417" />
+      <NODATA>0</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>

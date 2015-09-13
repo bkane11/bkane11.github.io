@@ -1,0 +1,25 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: ''
+center: 
+  - -122.3476
+  - 38.3592
+  - 16
+description: ''
+Layer: 
+  - id: corrected
+    Datasource: 
+      file: "c:/Users/ben/projects/enview-test\\corrected.tif"
+      type: gdal
+    description: ''
+    fields: {}
+    properties: 
+      "buffer-size": 0
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 16
+minzoom: 0
+name: ''

@@ -7,18 +7,18 @@ window.onload = function() {
         , maxZoom: 22
     });
 
-    basemap = L.tileLayer('https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=' + 'pk.eyJ1IjoiYmVua2FuZTExIiwiYSI6Ik1vLTFLMncifQ.NgU4eI8NXH82HGMK0i8cDw', {
-            attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>',
-			maxNativeZoom: 18,
-            maxZoom: 22
-        })
-        .addTo(map);
+   //  basemap = L.tileLayer('https://api.mapbox.com/v4/mapbox.streets/{z}/{x}/{y}.png?access_token=' + 'pk.eyJ1IjoiYmVua2FuZTExIiwiYSI6Ik1vLTFLMncifQ.NgU4eI8NXH82HGMK0i8cDw', {
+   //          attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>',
+			// maxNativeZoom: 18,
+   //          maxZoom: 22
+   //      })
+   //      .addTo(map);
 
-    tif = L.tileLayer('http://{s}.tiles.mapbox.com/v4/benkane11.cses714i/{z}/{x}/{y}.jpg?access_token=pk.eyJ1IjoiYmVua2FuZTExIiwiYSI6Ik1vLTFLMncifQ.NgU4eI8NXH82HGMK0i8cDw', {
+    tif = L.tileLayer('http://{s}.tiles.mapbox.com/v4/benkane11.0lunxw29/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiYmVua2FuZTExIiwiYSI6Ik1vLTFLMncifQ.NgU4eI8NXH82HGMK0i8cDw', {
             maxNativeZoom: 18,
-            maxZoom: 22,
-            bounds: [[38.357440825698134,-122.35196828842162],[38.36164723671958,-122.34428644180299]],
-            minZoom: 12
+            maxZoom: 22
+            //bounds: [[38.357440825698134,-122.35196828842162],[38.36164723671958,-122.34428644180299]],
+            //minZoom: 12
         })
         .addTo(map);
 
@@ -50,7 +50,7 @@ window.onload = function() {
 
 	RoWLayer = L.geoJson(buffered, {
 	    style: function (feature) {
-	        return {fillColor: 'yellow', color: 'yellow', opacity: 0.35};
+	        return {fillColor: 'yellow', color: 'yellow', opacity: 1, fillOpacity: 0.5};
 	    },
 	    onEachFeature: function (feature, layer) {
 	        layer.bindPopup(feature.properties.type);
@@ -64,7 +64,7 @@ window.onload = function() {
 		})
     .features
 		.map(function(feature){ return feature.geometry.coordinates });
-    console.log('foci', foci, foci.length);
+    console.log('number of foci:', foci.length);
 
     polyline = L.polyline(coords, {color: 'red'}).addTo(map);
 
@@ -102,13 +102,6 @@ window.onload = function() {
     		return point
     	});
 
-
-    	// point1.maxr = 30;
-    	// point2.maxr = 25;
-    	
-    	// var points = [ point1, point2 ];
-
-    	console.log(points);
     	ctx.clearRect(0, 0, params.canvas.width, params.canvas.height);
 
 		ctx.save();	
